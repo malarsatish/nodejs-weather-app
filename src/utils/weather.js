@@ -26,8 +26,9 @@ let ws_uri = ws_url + '/current?access_key=' + ws_access_key + ws_query
     }
     else {
       let current = response.body.current
-      let msg = current.weather_descriptions[0] + ' .It is currently ' + current.temperature +
-      ' degrees and it feels like ' + current.feelslike + ' degrees';
+      let msg = `${current.weather_descriptions[0]} .
+It is currently ${current.temperature} degrees and it feels like ${current.feelslike} degrees.
+Humidity is ${current.humidity}`;
 
     //   log(current.weather_descriptions[0] + ' .It is currently ' + current.temperature +
     //     ' degrees and it feels like ' + current.feelslike + ' degrees')

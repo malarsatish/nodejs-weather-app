@@ -72,7 +72,8 @@ app.get('/weather',(req, res)=>{
                   )
             } 
                 return res.send({
-                    address: 'Weather details for ' + loc + ' is as below. Input address is ' + req.query.address, 
+                    address: `Weather details for ${loc} @ ${Date.now()} is...`,
+                    //'is as below. Input address is ' + req.query.address, 
                     data //Shorthand
                   }
                   )
