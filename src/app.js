@@ -40,7 +40,7 @@ app.get('/help',(req, res) => {
         help: 'We are here to help!!!',
         name: 'Satish'
     })
-})
+}) 
 
 app.get('/weather',(req, res)=>{
  
